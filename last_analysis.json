@@ -1,0 +1,227 @@
+{
+  "analysis_results": [
+    {
+      "indikator": "atr_signal",
+      "sinyal": "VOLATİL",
+      "sebepler": [
+        "Piyasa hareketli. ATR: 2.26% (Eşik: >0.4%)"
+      ],
+      "tahmini_fiyat": null,
+      "data": null
+    },
+    {
+      "indikator": "bollinger_bands",
+      "sinyal": "YUKARI",
+      "sebepler": [
+        "En Düşük (83.2200) Alt Banda (83.3476) ulaştı."
+      ],
+      "tahmini_fiyat": null,
+      "data": null
+    },
+    {
+      "indikator": "crypto_prediction_model",
+      "sinyal": "GÜÇLÜ SAT",
+      "sebepler": [
+        "Düşüş Trendi (EMA 9<21) + Güçlü RSI (31.9)"
+      ],
+      "tahmini_fiyat": null,
+      "data": null
+    },
+    {
+      "indikator": "ema_signal",
+      "sinyal": "AŞAĞI",
+      "sebepler": [
+        "Fiyat (83.8400) EMA(50)'nın (88.7523) altında."
+      ],
+      "tahmini_fiyat": null,
+      "data": null
+    },
+    {
+      "indikator": "freqtrade_signal",
+      "sinyal": "NÖTR",
+      "sebepler": [
+        "Yön belirleyici koşullar oluşmadı."
+      ],
+      "tahmini_fiyat": null,
+      "data": null
+    },
+    {
+      "indikator": "heikin_ashi",
+      "sinyal": "GÜÇLÜ SAT",
+      "sebepler": [
+        "Güçlü HA Düşüş + Ana Trend Onayı."
+      ],
+      "tahmini_fiyat": null,
+      "data": null
+    },
+    {
+      "indikator": "keltner_channel",
+      "sinyal": "AŞAĞI",
+      "sebepler": [
+        "En Düşük (83.2200) alt kanala (84.0400) ulaştı."
+      ],
+      "tahmini_fiyat": null,
+      "data": null
+    },
+    {
+      "indikator": "liquidity_zones",
+      "sinyal": "YOK",
+      "sebepler": [
+        "Belirgin bir likidite avı yok."
+      ],
+      "tahmini_fiyat": null,
+      "data": {
+        "upper_liquidity_zone": 94.17,
+        "lower_liquidity_zone": 81.3
+      }
+    },
+    {
+      "indikator": "lstm_predictor",
+      "sinyal": "YUKARI",
+      "sebepler": [
+        "AI confidence: %2.25",
+        "Tahmini fiyat: 85.72"
+      ],
+      "tahmini_fiyat": 85.72,
+      "data": null
+    },
+    {
+      "indikator": "macd_signal",
+      "sinyal": "YOK",
+      "sebepler": [
+        "MACD ve Sinyal çizgileri arasında bir kesişim yok. Histogram: -0.95361"
+      ],
+      "tahmini_fiyat": null,
+      "data": null
+    },
+    {
+      "indikator": "mfi_signal",
+      "sinyal": "YUKARI",
+      "sebepler": [
+        "MFI (21.9) aşırı satım bölgesinden (20) çıktı."
+      ],
+      "tahmini_fiyat": null,
+      "data": null
+    },
+    {
+      "indikator": "pivot_points",
+      "sinyal": "YOK",
+      "sebepler": [
+        "Fiyat, önemli destek/direnç bölgelerinden uzakta."
+      ],
+      "tahmini_fiyat": null,
+      "data": null
+    },
+    {
+      "indikator": "qqe_mod",
+      "sinyal": "YOK",
+      "sebepler": [
+        "QQE hesaplaması sonrası veri kalmadı."
+      ],
+      "tahmini_fiyat": null,
+      "data": null
+    },
+    {
+      "indikator": "rsi_signal",
+      "sinyal": "SAT",
+      "sebepler": [
+        "RSI (31.88) düşüş momentumu bölgesinde (< 45)."
+      ],
+      "tahmini_fiyat": null,
+      "data": null
+    },
+    {
+      "indikator": "squeeze_momentum",
+      "sinyal": "AŞAĞI",
+      "sebepler": [
+        "Düşüş momentumu aktif (Değer: -6.40)."
+      ],
+      "tahmini_fiyat": null,
+      "data": null
+    },
+    {
+      "indikator": "stochastic_signal",
+      "sinyal": "YOK",
+      "sebepler": [
+        "Stochastic'te belirgin bir sinyal yok."
+      ],
+      "tahmini_fiyat": null,
+      "data": null
+    },
+    {
+      "indikator": "supertrend_signal",
+      "sinyal": "YOK",
+      "sebepler": [
+        "Supertrend hesaplaması sonrası veri kalmadı."
+      ],
+      "tahmini_fiyat": null,
+      "data": null
+    },
+    {
+      "indikator": "top_scalping_indicator",
+      "sinyal": "YOK",
+      "sebepler": [
+        "Scalping için uygun bir formasyon yok."
+      ],
+      "tahmini_fiyat": null,
+      "data": null
+    },
+    {
+      "indikator": "trend_meter",
+      "sinyal": "GÜÇLÜ SAT",
+      "sebepler": [
+        "Trend Skoru: -5/5 (Fiyat<EMA20, Fiyat<EMA50, Fiyat<EMA200, MACD<Sinyal, -DI>+DI)"
+      ],
+      "tahmini_fiyat": null,
+      "data": null
+    },
+    {
+      "indikator": "venky_signals",
+      "sinyal": "YOK",
+      "sebepler": [
+        "VWAP stratejisi için uygun koşullar yok."
+      ],
+      "tahmini_fiyat": null,
+      "data": null
+    },
+    {
+      "indikator": "vwap_signal",
+      "sinyal": "YOK",
+      "sebepler": [
+        "VWAP'ta hacim onaylı bir kırılım yok."
+      ],
+      "tahmini_fiyat": null,
+      "data": null
+    },
+    {
+      "indikator": "zlsma",
+      "sinyal": "AŞAĞI",
+      "sebepler": [
+        "Fiyat (83.8400) ZLSMA(21)'nın (85.5628) altında."
+      ],
+      "tahmini_fiyat": null,
+      "data": null
+    }
+  ],
+  "sinyal": "YUKARI",
+  "mumKapanis": 85.72,
+  "mumAcilis": 83.81,
+  "openTime": "2025-06-13T08:00:00+00:00",
+  "closeTime": "2025-06-13T12:00:00+00:00",
+  "onay_sinyali": {
+    "sinyal": "GÜÇLÜ SAT",
+    "sebep": "Düşüş Trendi (EMA 9<21) + Güçlü RSI (31.9)"
+  },
+  "liquidity_levels": {
+    "upper": 94.17,
+    "lower": 81.3
+  },
+  "final_verdict": {
+    "score": 1.0,
+    "verdict": "KARARSIZ",
+    "positive_signals": 3,
+    "negative_signals": 6,
+    "total_active_signals": 9,
+    "confidence_percent": 41
+  }
+}

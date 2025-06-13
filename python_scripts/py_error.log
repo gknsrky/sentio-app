@@ -1,0 +1,204 @@
+[2025-06-05 18:06:50.656474] İndikatör dizini bulunamadı: C:\Users\Gökhan\Desktop\sentio-app\python_scripts\scalping_indicator
+[2025-06-05 18:13:23.814513] Veri alınamadı (RequestException): 400 Client Error: Bad Request for url: https://api.binance.com/api/v3/klines?symbol=&interval=15m&limit=200
+[2025-06-05 18:14:38.512713] İndikatör dizini bulunamadı: C:\Users\Gökhan\Desktop\sentio-app\python_scripts\scalping_indicator
+[2025-06-05 18:20:10.247583] İndikatör dizini bulunamadı: C:\Users\Gökhan\Desktop\sentio-app\python_scripts\scalping_indicator
+[2025-06-05 18:29:12.775154] İndikatör dizini bulunamadı: C:\Users\Gökhan\Desktop\sentio-app\python_scripts\scalping_indicator
+[2025-06-05 18:35:03.761939] İndikatör dizini bulunamadı: C:\Users\Gökhan\Desktop\sentio-app\python_scripts\scalping_indicator
+[2025-06-05 18:50:35.881834] İndikatör dizini bulunamadı: C:\Users\Gökhan\Desktop\sentio-app\python_scripts\scalping_indicator
+[2025-06-05 18:55:59.656518] İndikatör dizini bulunamadı: C:\Users\Gökhan\Desktop\sentio-app\python_scripts\scalping_indicator
+[2025-06-05 19:13:02.105678] İndikatör dizini bulunamadı: C:\Users\Gökhan\Desktop\sentio-app\python_scripts\scalping_indicator
+[2025-06-05 19:18:49.461537] İndikatör dizini bulunamadı: C:\Users\Gökhan\Desktop\sentio-app\python_scripts\scalping_indicator
+[2025-06-05 19:20:33.738954] Veri alınamadı (RequestException): 400 Client Error: Bad Request for url: https://api.binance.com/api/v3/klines?symbol=LTCUSDT&interval=15&limit=200
+[2025-06-05 21:05:04.496781] Veri alınamadı (RequestException): 400 Client Error: Bad Request for url: https://api.binance.com/api/v3/klines?symbol=NEOUSDT&interval=30&limit=200
+[2025-06-05 21:05:52.448849] Veri alınamadı (RequestException): 400 Client Error: Bad Request for url: https://api.binance.com/api/v3/klines?symbol=NEOUSDT&interval=30&limit=200
+[2025-06-05 21:26:09.722913] Veri alınamadı (RequestException): 400 Client Error: Bad Request for url: https://api.binance.com/api/v3/klines?symbol=BNBUSDT&interval=30&limit=200
+[2025-06-05 21:30:17.825049] Veri alınamadı (RequestException): 400 Client Error: Bad Request for url: https://api.binance.com/api/v3/klines?symbol=ETHUSDT&interval=15&limit=200
+[2025-06-05 21:31:52.474553] Veri alınamadı (RequestException): 400 Client Error: Bad Request for url: https://api.binance.com/api/v3/klines?symbol=ETHUSDT&interval=15&limit=200
+[2025-06-05 21:32:31.059152] Veri alınamadı (RequestException): 400 Client Error: Bad Request for url: https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=5&limit=200
+[2025-06-05 21:36:54.259057] Veri alınamadı (RequestException): 400 Client Error: Bad Request for url: https://api.binance.com/api/v3/klines?symbol=BNBUSDT&interval=15&limit=200
+[2025-06-05 21:38:23.511587] Veri alınamadı (RequestException): 400 Client Error: Bad Request for url: https://api.binance.com/api/v3/klines?symbol=BNBUSDT&interval=15&limit=200
+[2025-06-05 21:47:07.848714] İndikatör dizini bulunamadı: C:\Users\Gökhan\Desktop\sentio-app\python_scripts\scalping_indicator
+[2025-06-05 21:48:50.972647] calculate fonksiyonu bulunamadı: atr_signal
+[2025-06-05 21:48:50.976649] calculate fonksiyonu bulunamadı: bollinger_bands
+[2025-06-05 21:49:08.413103] calculate fonksiyonu bulunamadı: crypto_prediction_model
+[2025-06-05 21:49:08.417104] calculate fonksiyonu bulunamadı: ema_signal
+[2025-06-05 21:49:08.421107] calculate fonksiyonu bulunamadı: freqtrade_signal
+[2025-06-05 21:49:08.424103] calculate fonksiyonu bulunamadı: heikin_ashi
+[2025-06-05 21:49:08.426109] calculate fonksiyonu bulunamadı: keltner_channel
+[2025-06-05 21:49:08.429104] calculate fonksiyonu bulunamadı: liquidity_zones
+[2025-06-05 21:49:08.435616] calculate fonksiyonu bulunamadı: macd_signal
+[2025-06-05 21:49:08.438614] calculate fonksiyonu bulunamadı: mfi_signal
+[2025-06-05 21:49:08.440614] calculate fonksiyonu bulunamadı: pivot_points
+[2025-06-05 21:49:08.443618] calculate fonksiyonu bulunamadı: qqe_mod
+[2025-06-05 21:49:08.445617] calculate fonksiyonu bulunamadı: rsi_signal
+[2025-06-05 21:49:08.448615] calculate fonksiyonu bulunamadı: squeeze_momentum
+[2025-06-05 21:49:08.452618] calculate fonksiyonu bulunamadı: stochastic_signal
+[2025-06-05 21:49:08.455615] calculate fonksiyonu bulunamadı: supertrend_signal
+[2025-06-05 21:49:08.459620] calculate fonksiyonu bulunamadı: top_scalping_indicator
+[2025-06-05 21:49:08.461622] calculate fonksiyonu bulunamadı: trend_meter
+[2025-06-05 21:49:08.464618] calculate fonksiyonu bulunamadı: venky_signals
+[2025-06-05 21:49:08.467615] calculate fonksiyonu bulunamadı: vwap_signal
+[2025-06-05 21:49:08.471618] calculate fonksiyonu bulunamadı: zlsma
+[2025-06-05 21:57:18.147191] calculate fonksiyonu bulunamadı: atr_signal
+[2025-06-05 21:57:18.149211] calculate fonksiyonu bulunamadı: bollinger_bands
+[2025-06-05 21:57:24.462760] calculate fonksiyonu bulunamadı: crypto_prediction_model
+[2025-06-05 21:57:24.464768] calculate fonksiyonu bulunamadı: ema_signal
+[2025-06-05 21:57:24.465762] calculate fonksiyonu bulunamadı: freqtrade_signal
+[2025-06-05 21:57:24.467769] calculate fonksiyonu bulunamadı: heikin_ashi
+[2025-06-05 21:57:24.468761] calculate fonksiyonu bulunamadı: keltner_channel
+[2025-06-05 21:57:24.469766] calculate fonksiyonu bulunamadı: liquidity_zones
+[2025-06-05 21:57:24.471763] calculate fonksiyonu bulunamadı: macd_signal
+[2025-06-05 21:57:24.473767] calculate fonksiyonu bulunamadı: mfi_signal
+[2025-06-05 21:57:24.474764] calculate fonksiyonu bulunamadı: pivot_points
+[2025-06-05 21:57:24.475766] calculate fonksiyonu bulunamadı: qqe_mod
+[2025-06-05 21:57:24.476763] calculate fonksiyonu bulunamadı: rsi_signal
+[2025-06-05 21:57:24.477762] calculate fonksiyonu bulunamadı: squeeze_momentum
+[2025-06-05 21:57:24.478769] calculate fonksiyonu bulunamadı: stochastic_signal
+[2025-06-05 21:57:24.479762] calculate fonksiyonu bulunamadı: supertrend_signal
+[2025-06-05 21:57:24.480763] calculate fonksiyonu bulunamadı: top_scalping_indicator
+[2025-06-05 21:57:24.482773] calculate fonksiyonu bulunamadı: trend_meter
+[2025-06-05 21:57:24.483767] calculate fonksiyonu bulunamadı: venky_signals
+[2025-06-05 21:57:24.485766] calculate fonksiyonu bulunamadı: vwap_signal
+[2025-06-05 21:57:24.486765] calculate fonksiyonu bulunamadı: zlsma
+[2025-06-05 21:59:07.823296] calculate fonksiyonu bulunamadı: atr_signal
+[2025-06-05 21:59:07.824300] calculate fonksiyonu bulunamadı: bollinger_bands
+[2025-06-05 21:59:13.531262] calculate fonksiyonu bulunamadı: crypto_prediction_model
+[2025-06-05 21:59:13.533277] calculate fonksiyonu bulunamadı: ema_signal
+[2025-06-05 21:59:13.534268] calculate fonksiyonu bulunamadı: freqtrade_signal
+[2025-06-05 21:59:13.535271] calculate fonksiyonu bulunamadı: heikin_ashi
+[2025-06-05 21:59:13.536270] calculate fonksiyonu bulunamadı: keltner_channel
+[2025-06-05 21:59:13.536270] calculate fonksiyonu bulunamadı: liquidity_zones
+[2025-06-05 21:59:13.538268] calculate fonksiyonu bulunamadı: macd_signal
+[2025-06-05 21:59:13.539271] calculate fonksiyonu bulunamadı: mfi_signal
+[2025-06-05 21:59:13.539271] calculate fonksiyonu bulunamadı: pivot_points
+[2025-06-05 21:59:13.540267] calculate fonksiyonu bulunamadı: qqe_mod
+[2025-06-05 21:59:13.541270] calculate fonksiyonu bulunamadı: rsi_signal
+[2025-06-05 21:59:13.542269] calculate fonksiyonu bulunamadı: squeeze_momentum
+[2025-06-05 21:59:13.543272] calculate fonksiyonu bulunamadı: stochastic_signal
+[2025-06-05 21:59:13.544270] calculate fonksiyonu bulunamadı: supertrend_signal
+[2025-06-05 21:59:13.545270] calculate fonksiyonu bulunamadı: top_scalping_indicator
+[2025-06-05 21:59:13.547285] calculate fonksiyonu bulunamadı: trend_meter
+[2025-06-05 21:59:13.548603] calculate fonksiyonu bulunamadı: venky_signals
+[2025-06-05 21:59:13.549588] calculate fonksiyonu bulunamadı: vwap_signal
+[2025-06-05 21:59:13.550589] calculate fonksiyonu bulunamadı: zlsma
+[2025-06-05 22:03:11.262704] calculate fonksiyonu bulunamadı: atr_signal
+[2025-06-05 22:03:11.264708] calculate fonksiyonu bulunamadı: bollinger_bands
+[2025-06-05 22:03:17.879816] calculate fonksiyonu bulunamadı: crypto_prediction_model
+[2025-06-05 22:03:17.882854] calculate fonksiyonu bulunamadı: ema_signal
+[2025-06-05 22:03:17.884819] calculate fonksiyonu bulunamadı: freqtrade_signal
+[2025-06-05 22:03:17.885815] calculate fonksiyonu bulunamadı: heikin_ashi
+[2025-06-05 22:03:17.886817] calculate fonksiyonu bulunamadı: keltner_channel
+[2025-06-05 22:03:17.887816] calculate fonksiyonu bulunamadı: liquidity_zones
+[2025-06-05 22:03:17.889816] calculate fonksiyonu bulunamadı: macd_signal
+[2025-06-05 22:03:17.890846] calculate fonksiyonu bulunamadı: mfi_signal
+[2025-06-05 22:03:17.891831] calculate fonksiyonu bulunamadı: pivot_points
+[2025-06-05 22:03:17.893817] calculate fonksiyonu bulunamadı: qqe_mod
+[2025-06-05 22:03:17.894817] calculate fonksiyonu bulunamadı: rsi_signal
+[2025-06-05 22:03:17.896816] calculate fonksiyonu bulunamadı: squeeze_momentum
+[2025-06-05 22:03:17.898816] calculate fonksiyonu bulunamadı: stochastic_signal
+[2025-06-05 22:03:17.899820] calculate fonksiyonu bulunamadı: supertrend_signal
+[2025-06-05 22:03:17.900817] calculate fonksiyonu bulunamadı: top_scalping_indicator
+[2025-06-05 22:03:17.901820] calculate fonksiyonu bulunamadı: trend_meter
+[2025-06-05 22:03:17.903819] calculate fonksiyonu bulunamadı: venky_signals
+[2025-06-05 22:03:17.904814] calculate fonksiyonu bulunamadı: vwap_signal
+[2025-06-05 22:03:17.905815] calculate fonksiyonu bulunamadı: zlsma
+[2025-06-06 00:48:43.100541] train_lstm_model HATA: calculate fonksiyonu eksik: train_lstm_model
+[2025-06-06 00:49:43.183296] lstm_predictor HATA: No module named 'tensorflow.keras'
+[2025-06-06 00:49:43.192295] train_lstm_model HATA: No module named 'tensorflow.keras'
+[2025-06-06 00:57:44.522495] train_lstm_model HATA: calculate fonksiyonu eksik: train_lstm_model
+[2025-06-10 20:57:30.635949] [HATA] İndikatör klasörü bulunamadı: C:\Users\Gökhan\Desktop\sentio-app\python_scripts\scalping_indicators
+[2025-06-10 21:36:43.659992] CLI hatası: [WinError 3] Sistem belirtilen yolu bulamıyor: 'C:\\Users\\Gökhan\\Desktop\\sentio-app\\python_scripts\\scalping_indicator'
+[2025-06-10 21:38:11.519075] CLI hatası: [WinError 3] Sistem belirtilen yolu bulamıyor: 'C:\\Users\\Gökhan\\Desktop\\sentio-app\\python_scripts\\scalping_indicator'
+[2025-06-10 21:41:36.734991] CLI hatası: [WinError 3] Sistem belirtilen yolu bulamıyor: 'C:\\Users\\Gökhan\\Desktop\\sentio-app\\python_scripts\\scalping_indicator'
+[2025-06-10 21:43:41.365136] CLI hatası: [WinError 3] Sistem belirtilen yolu bulamıyor: 'C:\\Users\\Gökhan\\Desktop\\sentio-app\\python_scripts\\scalping_indicator'
+[2025-06-10 22:24:18.958177] atr_signal HATA: calculate() takes 1 positional argument but 2 were given
+[2025-06-10 22:24:18.961178] bollinger_bands HATA: calculate() takes 1 positional argument but 2 were given
+[2025-06-10 22:24:18.963176] crypto_prediction_model HATA: calculate() takes 1 positional argument but 2 were given
+[2025-06-10 22:24:18.965183] ema_signal HATA: calculate() takes 1 positional argument but 2 were given
+[2025-06-10 22:24:18.967201] freqtrade_signal HATA: calculate() takes 1 positional argument but 2 were given
+[2025-06-10 22:24:18.969183] heikin_ashi HATA: calculate() takes 1 positional argument but 2 were given
+[2025-06-10 22:24:18.970185] keltner_channel HATA: calculate() takes 1 positional argument but 2 were given
+[2025-06-10 22:24:18.971186] liquidity_zones HATA: calculate() takes 1 positional argument but 2 were given
+[2025-06-10 22:24:24.646241] lstm_predictor HATA: calculate() takes 1 positional argument but 2 were given
+[2025-06-10 22:24:24.647211] macd_signal HATA: calculate() takes 1 positional argument but 2 were given
+[2025-06-10 22:24:24.649210] mfi_signal HATA: calculate() takes 1 positional argument but 2 were given
+[2025-06-10 22:24:24.650211] pivot_points HATA: calculate() takes 1 positional argument but 2 were given
+[2025-06-10 22:24:24.651206] qqe_mod HATA: calculate() takes 1 positional argument but 2 were given
+[2025-06-10 22:24:24.653211] rsi_signal HATA: calculate() takes 1 positional argument but 2 were given
+[2025-06-10 22:24:24.654209] squeeze_momentum HATA: calculate() takes 1 positional argument but 2 were given
+[2025-06-10 22:24:24.656207] stochastic_signal HATA: calculate() takes 1 positional argument but 2 were given
+[2025-06-10 22:24:24.658210] supertrend_signal HATA: calculate() takes 1 positional argument but 2 were given
+[2025-06-10 22:24:24.659209] top_scalping_indicator HATA: calculate() takes 1 positional argument but 2 were given
+[2025-06-10 22:24:24.660207] trend_meter HATA: calculate() takes 1 positional argument but 2 were given
+[2025-06-10 22:24:24.662211] venky_signals HATA: calculate() takes 1 positional argument but 2 were given
+[2025-06-10 22:24:24.663208] vwap_signal HATA: calculate() takes 1 positional argument but 2 were given
+[2025-06-10 22:24:24.664207] zlsma HATA: calculate() takes 1 positional argument but 2 were given
+[2025-06-10 22:26:50.797811] lstm_predictor HATA: calculate() takes 1 positional argument but 2 were given
+[2025-06-11 10:55:25.456230] atr_signal HATA: calculate() missing 2 required positional arguments: 'symbol' and 'interval'
+[2025-06-11 10:57:51.797337] bollinger_bands HATA: calculate() got an unexpected keyword argument 'symbol'
+[2025-06-11 10:57:51.799337] crypto_prediction_model HATA: calculate() got an unexpected keyword argument 'symbol'
+[2025-06-11 10:57:51.801342] ema_signal HATA: calculate() got an unexpected keyword argument 'symbol'
+[2025-06-11 10:57:51.802340] freqtrade_signal HATA: calculate() got an unexpected keyword argument 'symbol'
+[2025-06-11 10:57:51.803342] heikin_ashi HATA: calculate() got an unexpected keyword argument 'symbol'
+[2025-06-11 10:57:51.804338] keltner_channel HATA: calculate() got an unexpected keyword argument 'symbol'
+[2025-06-11 10:57:51.805340] liquidity_zones HATA: calculate() got an unexpected keyword argument 'symbol'
+[2025-06-11 10:57:56.571422] lstm_predictor HATA: calculate() got an unexpected keyword argument 'symbol'
+[2025-06-11 10:57:56.573424] macd_signal HATA: calculate() got an unexpected keyword argument 'symbol'
+[2025-06-11 10:57:56.575430] mfi_signal HATA: calculate() got an unexpected keyword argument 'symbol'
+[2025-06-11 10:57:56.576424] pivot_points HATA: calculate() got an unexpected keyword argument 'symbol'
+[2025-06-11 10:57:56.577424] qqe_mod HATA: calculate() got an unexpected keyword argument 'symbol'
+[2025-06-11 10:57:56.579422] rsi_signal HATA: calculate() got an unexpected keyword argument 'symbol'
+[2025-06-11 10:57:56.580425] squeeze_momentum HATA: calculate() got an unexpected keyword argument 'symbol'
+[2025-06-11 10:57:56.580425] stochastic_signal HATA: calculate() got an unexpected keyword argument 'symbol'
+[2025-06-11 10:57:56.581556] supertrend_signal HATA: calculate() got an unexpected keyword argument 'symbol'
+[2025-06-11 10:57:56.582556] top_scalping_indicator HATA: calculate() got an unexpected keyword argument 'symbol'
+[2025-06-11 10:57:56.584118] trend_meter HATA: calculate() got an unexpected keyword argument 'symbol'
+[2025-06-11 10:57:56.585126] venky_signals HATA: calculate() got an unexpected keyword argument 'symbol'
+[2025-06-11 10:57:56.586126] vwap_signal HATA: calculate() got an unexpected keyword argument 'symbol'
+[2025-06-11 10:57:56.587125] zlsma HATA: calculate() got an unexpected keyword argument 'symbol'
+[2025-06-11 10:57:56.587125] CLI hatası: name 'f' is not defined
+[2025-06-12 20:26:38.837709] CLI hatası: get_final_verdict() missing 1 required positional argument: 'interval'
+[2025-06-12 21:01:39.372381] CLI hatası: get_final_verdict() missing 1 required positional argument: 'interval'
+[2025-06-12 21:12:06.955287] CLI hatası: get_final_verdict() missing 1 required positional argument: 'interval'
+[2025-06-12 21:13:48.927302] CLI hatası: get_final_verdict() missing 1 required positional argument: 'interval'
+[2025-06-12 21:18:15.865804] CLI hatası: get_final_verdict() missing 1 required positional argument: 'interval'
+[2025-06-13 08:09:39.108206] CLI hatası: get_final_verdict() missing 1 required positional argument: 'interval'
+[2025-06-13 12:35:17.314774] CLI hatası: get_final_verdict() missing 1 required positional argument: 'interval'
+[2025-06-13 13:59:17.426770] atr_signal HATA: cannot import name 'NaN' from 'numpy' (C:\Users\Gökhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py)
+[2025-06-13 13:59:17.499120] bollinger_bands HATA: cannot import name 'NaN' from 'numpy' (C:\Users\Gökhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py)
+[2025-06-13 13:59:17.520161] crypto_prediction_model HATA: cannot import name 'NaN' from 'numpy' (C:\Users\Gökhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py)
+[2025-06-13 13:59:17.542179] ema_signal HATA: cannot import name 'NaN' from 'numpy' (C:\Users\Gökhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py)
+[2025-06-13 13:59:17.562903] freqtrade_signal HATA: cannot import name 'NaN' from 'numpy' (C:\Users\Gökhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py)
+[2025-06-13 13:59:17.585283] heikin_ashi HATA: cannot import name 'NaN' from 'numpy' (C:\Users\Gökhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py)
+[2025-06-13 13:59:17.607375] keltner_channel HATA: cannot import name 'NaN' from 'numpy' (C:\Users\Gökhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py)
+[2025-06-13 13:59:17.717743] lstm_predictor HATA: No module named 'tensorflow'
+[2025-06-13 13:59:17.907608] macd_signal HATA: cannot import name 'NaN' from 'numpy' (C:\Users\Gökhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py)
+[2025-06-13 13:59:17.928151] mfi_signal HATA: cannot import name 'NaN' from 'numpy' (C:\Users\Gökhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py)
+[2025-06-13 13:59:17.952333] qqe_mod HATA: cannot import name 'NaN' from 'numpy' (C:\Users\Gökhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py)
+[2025-06-13 13:59:17.972549] rsi_signal HATA: cannot import name 'NaN' from 'numpy' (C:\Users\Gökhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py)
+[2025-06-13 13:59:17.993352] squeeze_momentum HATA: cannot import name 'NaN' from 'numpy' (C:\Users\Gökhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py)
+[2025-06-13 13:59:18.014044] stochastic_signal HATA: cannot import name 'NaN' from 'numpy' (C:\Users\Gökhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py)
+[2025-06-13 13:59:18.035961] supertrend_signal HATA: cannot import name 'NaN' from 'numpy' (C:\Users\Gökhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py)
+[2025-06-13 13:59:18.056839] top_scalping_indicator HATA: cannot import name 'NaN' from 'numpy' (C:\Users\Gökhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py)
+[2025-06-13 13:59:18.077511] trend_meter HATA: cannot import name 'NaN' from 'numpy' (C:\Users\Gökhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py)
+[2025-06-13 13:59:18.097540] venky_signals HATA: cannot import name 'NaN' from 'numpy' (C:\Users\Gökhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py)
+[2025-06-13 13:59:18.128878] zlsma HATA: cannot import name 'NaN' from 'numpy' (C:\Users\Gökhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py)
+[2025-06-13 14:25:26.730701] atr_signal HATA: cannot import name 'NaN' from 'numpy' (C:\Users\Gökhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py)
+[2025-06-13 14:25:26.741693] bollinger_bands HATA: cannot import name 'NaN' from 'numpy' (C:\Users\Gökhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py)
+[2025-06-13 14:25:26.752092] crypto_prediction_model HATA: cannot import name 'NaN' from 'numpy' (C:\Users\Gökhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py)
+[2025-06-13 14:25:26.762452] ema_signal HATA: cannot import name 'NaN' from 'numpy' (C:\Users\Gökhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py)
+[2025-06-13 14:25:26.773184] freqtrade_signal HATA: cannot import name 'NaN' from 'numpy' (C:\Users\Gökhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py)
+[2025-06-13 14:25:26.782379] heikin_ashi HATA: cannot import name 'NaN' from 'numpy' (C:\Users\Gökhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py)
+[2025-06-13 14:25:26.793232] keltner_channel HATA: cannot import name 'NaN' from 'numpy' (C:\Users\Gökhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py)
+[2025-06-13 14:25:26.845214] lstm_predictor HATA: No module named 'tensorflow'
+[2025-06-13 14:25:26.858742] macd_signal HATA: cannot import name 'NaN' from 'numpy' (C:\Users\Gökhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py)
+[2025-06-13 14:25:26.869278] mfi_signal HATA: cannot import name 'NaN' from 'numpy' (C:\Users\Gökhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py)
+[2025-06-13 14:25:26.881449] qqe_mod HATA: cannot import name 'NaN' from 'numpy' (C:\Users\Gökhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py)
+[2025-06-13 14:25:26.891795] rsi_signal HATA: cannot import name 'NaN' from 'numpy' (C:\Users\Gökhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py)
+[2025-06-13 14:25:26.901524] squeeze_momentum HATA: cannot import name 'NaN' from 'numpy' (C:\Users\Gökhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py)
+[2025-06-13 14:25:26.912299] stochastic_signal HATA: cannot import name 'NaN' from 'numpy' (C:\Users\Gökhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py)
+[2025-06-13 14:25:26.923207] supertrend_signal HATA: cannot import name 'NaN' from 'numpy' (C:\Users\Gökhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py)
+[2025-06-13 14:25:26.933367] top_scalping_indicator HATA: cannot import name 'NaN' from 'numpy' (C:\Users\Gökhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py)
+[2025-06-13 14:25:26.943120] trend_meter HATA: cannot import name 'NaN' from 'numpy' (C:\Users\Gökhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py)
+[2025-06-13 14:25:26.953748] venky_signals HATA: cannot import name 'NaN' from 'numpy' (C:\Users\Gökhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py)
+[2025-06-13 14:25:26.974666] zlsma HATA: cannot import name 'NaN' from 'numpy' (C:\Users\Gökhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py)

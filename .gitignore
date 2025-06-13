@@ -1,0 +1,26 @@
+# İşletim sistemi özel dosyaları
+.DS_Store
+Thumbs.db
+
+# Node.js bağımlılıkları (npm install ile yeniden yüklenir)
+/node_modules/
+/client/node_modules/
+
+# React build çıktıları (npm run build ile yeniden oluşturulur)
+/client/build/
+
+# Electron derleme çıktıları (npm run make ile yeniden oluşturulur)
+/out/
+
+# Python cache dosyaları
+__pycache__/
+*.pyc
+
+# Tüm veri klasörleri (çok büyük ve yeniden oluşturulabilir)
+/data/
+
+# Model checkpoints klasöründeki her şeyi görmezden gel...
+/python_scripts/scalping_indicator/_train_lstm_model/model_checkpoints/*
+
+# ...ama içindeki .h5 uzantılı dosyaları HARİÇ TUT (yani onları GÖR ve takip et).
+!/python_scripts/scalping_indicator/_train_lstm_model/model_checkpoints/*.h5
