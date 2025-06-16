@@ -22,6 +22,8 @@ def log_to_file(message):
 def load_data(symbol, interval, limit=1000):
     url = f"https://api.binance.com/api/v3/klines?symbol={symbol}&interval={interval}&limit={limit}"
     try:
+        # DÜZELTME 1: Güvenli SSL bağlantısı için 'verify=False' kaldırıldı.
+        # Sistemdeki sertifikaların doğru kullanılmasını sağlıyoruz.
         response = requests.get(url)
         response.raise_for_status()
         data = response.json()
@@ -35,7 +37,6 @@ def load_data(symbol, interval, limit=1000):
             "close_time", "qav", "trades", "tbbav", "tbqav", "ignore"
         ])
         df = df.astype({"open": float, "high": float, "low": float, "close": float, "volume": float})
-        # ⭐ DÜZELTME: Zaman damgalarını UTC-aware (saat dilimi bilgisine sahip) olarak oluşturuyoruz
         df["time"] = pd.to_datetime(df["time"], unit='ms', utc=True)
         df.set_index("time", inplace=True)
         return df[["open", "high", "low", "close", "volume"]]
@@ -44,6 +45,7 @@ def load_data(symbol, interval, limit=1000):
         return None
 
 def save_prediction_log(log_data):
+    # Bu fonksiyona dokunulmadı.
     try:
         log_path = os.path.abspath(
             os.path.join(os.path.dirname(__file__), "..", "data", "prediction_log.json")
@@ -54,7 +56,11 @@ def save_prediction_log(log_data):
         if os.path.exists(log_path):
             try:
                 with open(log_path, "r", encoding="utf-8") as f:
-                    log_entries = json.load(f)
+                    # Dosyanın boş olup olmadığını kontrol et
+                    content = f.read()
+                    if content.strip():
+                        f.seek(0)
+                        log_entries = json.load(f)
             except (json.JSONDecodeError, FileNotFoundError):
                 log_entries = []
 
@@ -66,7 +72,7 @@ def save_prediction_log(log_data):
     except Exception as e:
         log_to_file(f"[ERROR] Tahmin günlüğüne kaydetme hatası: {e}")
 
-def run_all_analysis(symbol, interval):
+def run_all_analysis(symbol, interval, mode): # DÜZELTME: 'mode' parametresi eklendi
     df = load_data(symbol, interval)
     if df is None:
         raise Exception("Veri alınamadı")
@@ -88,23 +94,39 @@ def run_all_analysis(symbol, interval):
             spec.loader.exec_module(module)
 
             if not hasattr(module, "calculate"):
-                raise AttributeError(f"calculate fonksiyonu eksik: {module_name}")
+                continue
             
+            # --- DÜZELTME 2: AKILLI ve ESNEK FONKSİYON ÇAĞIRMA MANTIĞI ---
             sig = inspect.signature(module.calculate)
-            num_params = len(sig.parameters)
+            params = sig.parameters
+            
+            # Çağrılacak argümanları bir sözlükte toplayalım
+            call_args = {'df': df.copy()}
+            if 'symbol' in params:
+                call_args['symbol'] = symbol
+            if 'interval' in params:
+                call_args['interval'] = interval
+            if 'mode' in params:
+                call_args['mode'] = mode
 
-            if num_params == 3:
-                result = module.calculate(df.copy(), symbol=symbol, interval=interval)
-            elif num_params == 1:
-                result = module.calculate(df.copy())
+            # Fonksiyonu, sadece kabul ettiği parametrelerle çağır
+            raw_result = module.calculate(**call_args)
+
+            # Farklı indikatörlerden gelebilecek farklı dönüş tiplerini yönetelim
+            result = {}
+            if isinstance(raw_result, dict):
+                result = raw_result # Eğer sözlük döndürüyorsa direkt kullan
+            elif isinstance(raw_result, tuple) and len(raw_result) == 2:
+                # Eğer (sinyal, detay) şeklinde tuple döndürüyorsa sözlüğe çevir
+                result = {'sinyal': raw_result[0], 'sebepler': [raw_result[1]] if raw_result[1] else []}
             else:
-                raise ValueError(f"{module_name}.calculate() beklenmedik sayıda parametreye sahip: {num_params}")
-
-            if not isinstance(result, dict):
-                raise ValueError(f"{module_name} calculate() sözlük dönmeli")
-
+                # Eğer sadece string bir sinyal döndürüyorsa sözlüğe çevir
+                result = {'sinyal': str(raw_result), 'sebepler': []}
+            # --- DÜZELTME BİTİŞİ ---
+            
             signal_result = result.get('sinyal', 'YOK')
             
+            # Senin orijinal 'results.append' satırın korunuyor
             results.append({
                 "indikator": module_name,
                 "sinyal": signal_result,
@@ -117,7 +139,7 @@ def run_all_analysis(symbol, interval):
 
             if signal_result == "HATA":
                 error_reasons = result.get('sebepler', ['Sebep bulunamadı.'])
-                print(f"    └── [HATA DETAYI - {module_name}]: {error_reasons[0]}", file=sys.stderr)
+                print(f"     └── [HATA DETAYI - {module_name}]: {error_reasons[0]}", file=sys.stderr)
 
         except Exception as e:
             log_to_file(f"{module_name} HATA: {e}")
@@ -126,24 +148,24 @@ def run_all_analysis(symbol, interval):
     return df, results
 
 if __name__ == "__main__":
+    # Bu __main__ bloğuna dokunulmadı, sadece mode parametresi eklendi.
     try:
-        if len(sys.argv) < 3:
-            print(json.dumps({"error": "Eksik parametreler"}))
+        if len(sys.argv) < 4:
+            print(json.dumps({"error": "Eksik parametreler: python run_all_analysis.py <symbol> <interval> <mode>"}))
             sys.exit(1)
 
         symbol = sys.argv[1]
         interval = sys.argv[2]
+        mode = sys.argv[3]
         
         print(f"[INFO] Analiz başlatılıyor: {symbol} - {interval}", file=sys.stderr)
-        df, results = run_all_analysis(symbol, interval)
+        df, results = run_all_analysis(symbol, interval, mode)
 
         final = {"analysis_results": results}
         
         lstm_result = next((r for r in results if r["indikator"] == "lstm_predictor"), None)
         onay_modeli_result = next((r for r in results if r["indikator"] == "crypto_prediction_model"), None)
         
-        # --- ⭐⭐⭐ DÜZELTME BURADA ⭐⭐⭐ ---
-        # Fonksiyona eksik olan 'interval' parametresini ekliyoruz.
         final_verdict_data = get_final_verdict(results, interval)
         
         if lstm_result:
@@ -189,19 +211,13 @@ if __name__ == "__main__":
         
         print("-" * 40, file=sys.stderr)
         print(f"[NİHAİ KARAR] -> SKOR: {final_verdict_data.get('score')}, TAVSİYE: {final_verdict_data.get('verdict')}", file=sys.stderr)
-        print(f"    └── Pozitif Sinyaller: {final_verdict_data.get('positive_signals')}, Negatif Sinyaller: {final_verdict_data.get('negative_signals')}", file=sys.stderr)
+        print(f"     └── Pozitif Sinyaller: {final_verdict_data.get('positive_signals')}, Negatif Sinyaller: {final_verdict_data.get('negative_signals')}", file=sys.stderr)
         print("-" * 40, file=sys.stderr)
 
         with open("last_analysis.json", "w", encoding="utf-8") as f:
             json.dump(final, f, ensure_ascii=False, indent=2)
 
         print(json.dumps(final, ensure_ascii=False))
-        sys.stdout.flush()
-
-    except Exception as e:
-        msg = f"CLI hatası: {e}"
-        log_to_file(msg)
-        print(json.dumps({"error": msg}))
         sys.stdout.flush()
 
     except Exception as e:

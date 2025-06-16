@@ -115,7 +115,9 @@ if __name__ == "__main__":
                     start_time_ms = int(last_timestamp * 1000) + 1
                 else:
                     # Dosya boşsa, sıfırdan veri çekme mantığına geri dön
-                    os.path.exists(file_path) # Bu satırı yeniden değerlendir, sanki mantık hatası var
+                    # Bu blok boş bırakılarak start_time_ms'in 0 kalması ve
+                    # aşağıdaki "yeni veri çekme" bloğunun tetiklenmesi sağlanır.
+                    pass
                     
             if start_time_ms == 0: # Eğer dosya yoksa veya boşsa bu blok çalışır
                 print(f"'{file_path}' için yeni veri çekilecek.")

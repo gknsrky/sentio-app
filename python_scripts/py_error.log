@@ -202,3 +202,25 @@
 [2025-06-13 14:25:26.943120] trend_meter HATA: cannot import name 'NaN' from 'numpy' (C:\Users\Gökhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py)
 [2025-06-13 14:25:26.953748] venky_signals HATA: cannot import name 'NaN' from 'numpy' (C:\Users\Gökhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py)
 [2025-06-13 14:25:26.974666] zlsma HATA: cannot import name 'NaN' from 'numpy' (C:\Users\Gökhan\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\__init__.py)
+[2025-06-14 13:30:39.310255] lstm_predictor HATA: calculate fonksiyonu eksik: lstm_predictor
+[2025-06-14 13:44:31.213370] atr_signal HATA: calculate() got an unexpected keyword argument 'mode'
+[2025-06-14 13:44:31.213370] bollinger_bands HATA: calculate() got an unexpected keyword argument 'mode'
+[2025-06-14 13:44:31.213370] crypto_prediction_model HATA: calculate() got an unexpected keyword argument 'mode'
+[2025-06-14 13:44:31.213370] ema_signal HATA: calculate() got an unexpected keyword argument 'mode'
+[2025-06-14 13:44:31.213370] freqtrade_signal HATA: calculate() got an unexpected keyword argument 'mode'
+[2025-06-14 13:44:31.213370] heikin_ashi HATA: calculate() got an unexpected keyword argument 'mode'
+[2025-06-14 13:44:31.227359] keltner_channel HATA: calculate() got an unexpected keyword argument 'mode'
+[2025-06-14 13:44:31.231329] liquidity_zones HATA: calculate() got an unexpected keyword argument 'mode'
+[2025-06-14 13:44:52.189879] macd_signal HATA: calculate() got an unexpected keyword argument 'mode'
+[2025-06-14 13:44:52.190888] mfi_signal HATA: calculate() got an unexpected keyword argument 'mode'
+[2025-06-14 13:44:52.190888] pivot_points HATA: calculate() got an unexpected keyword argument 'mode'
+[2025-06-14 13:44:52.190888] qqe_mod HATA: calculate() got an unexpected keyword argument 'mode'
+[2025-06-14 13:44:52.190888] rsi_signal HATA: calculate() got an unexpected keyword argument 'mode'
+[2025-06-14 13:44:52.190888] squeeze_momentum HATA: calculate() got an unexpected keyword argument 'mode'
+[2025-06-14 13:44:52.203685] stochastic_signal HATA: calculate() got an unexpected keyword argument 'mode'
+[2025-06-14 13:44:52.207023] supertrend_signal HATA: calculate() got an unexpected keyword argument 'mode'
+[2025-06-14 13:44:52.207821] top_scalping_indicator HATA: calculate() got an unexpected keyword argument 'mode'
+[2025-06-14 13:44:52.207821] trend_meter HATA: calculate() got an unexpected keyword argument 'mode'
+[2025-06-14 13:44:52.207821] venky_signals HATA: calculate() got an unexpected keyword argument 'mode'
+[2025-06-14 13:44:52.207821] vwap_signal HATA: calculate() got an unexpected keyword argument 'mode'
+[2025-06-14 13:44:52.207821] zlsma HATA: calculate() got an unexpected keyword argument 'mode'

@@ -22,7 +22,7 @@ def generate_features_and_target(df):
     df['atr_percent'] = (df[f'ATRr_14'] / df['close']) * 100
     df['ema_percent_diff'] = ((df['close'] - df[f'EMA_50']) / df[f'EMA_50']) * 100
     
-    # Hedef değişkeni oluştur: bir sonraki mum yükseldi mi (1) yoksa düşüş mü (0) 
+    # Hedef değişkeni oluştur: bir sonraki mum yükseldi mi (1) yoksa düşüş mü (0)
     df['target'] = (df['close'].shift(-1) > df['close']).astype(int)
     
     df.dropna(inplace=True)

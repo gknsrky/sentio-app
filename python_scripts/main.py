@@ -15,9 +15,10 @@ def log_to_file(message):
 def get_binance_symbols():
     url = "https://api.binance.com/api/v3/exchangeInfo"
     try:
-        # Önce mevcut dosyayı kontrol et
-        path = os.path.join("resources", "symbols")
-        file_path = os.path.join(path, "binance_symbols.json")
+        # Proje ana dizinini baz alarak data klasörünün yolunu belirliyoruz.
+        project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        output_dir = os.path.join(project_root, "data")
+        file_path = os.path.join(output_dir, "binance_symbols.json")
         
         # Eğer dosya varsa ve 1 saatten daha yeni ise, yeniden indirme
         if os.path.exists(file_path):
@@ -25,20 +26,23 @@ def get_binance_symbols():
             if (datetime.now().timestamp() - file_time) < 3600:  # 1 saat = 3600 saniye
                 with open(file_path, "r", encoding="utf-8") as f:
                     symbols = json.load(f)
-                print(json.dumps({"success": f"Mevcut {len(symbols)} sembol kullanıldı."}))
+                print(json.dumps({"success": f"Önbellekten {len(symbols)} sembol kullanıldı."}))
                 return
 
         # Dosya yoksa veya eskiyse yeni liste indir
         response = requests.get(url)
         response.raise_for_status()
         data = response.json()
+        # update_binance_symbols.py'dan gelen daha iyi filtreleme mantığı
         symbols = [
-            item['symbol']
-            for item in data['symbols']
-            if item['quoteAsset'] == 'USDT' and item['status'] == 'TRADING'
+            s["symbol"]
+            for s in data["symbols"]
+            if s["status"] == "TRADING"
+            and s["isSpotTradingAllowed"]
+            and s["symbol"].endswith("USDT")
         ]
 
-        os.makedirs(path, exist_ok=True)
+        os.makedirs(output_dir, exist_ok=True)
         with open(file_path, "w", encoding="utf-8") as f:
             json.dump(symbols, f, indent=2)
 
